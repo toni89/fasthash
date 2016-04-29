@@ -1,7 +1,7 @@
 {
   "name": "fasthash",
   "description": "Calculate hashes for files and directories the streaming way",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "./lib/fasthash.js",
   "license": "MIT",
   "author": {

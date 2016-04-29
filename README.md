@@ -7,10 +7,11 @@ Calculate hashes for files and directories the streaming way
 ```javascript
 var fasthash = require("./fasthash");
 
+// Defaults
 var options = {
-    algorithm: 'md5' // default
+    algorithm: 'md5',
+    relative: true 
 };
-
 
 // Usage: fasthash.file(filePath, [options], onComplete)
 fasthash.file("testdata/index.html", options, function(error, hash) {
@@ -21,11 +22,9 @@ fasthash.file("testdata/index.html", options, function(error, hash) {
     // a6febb912da51bcbcc443fc658c76c3d
 });
 
-
 // Usage: fasthash.file(dirPath, [options], onComplete)
 fasthash.directory("testdata", options, function(hashes) {
     console.log(hashes);
-
     //  {
     //      'testdata/Dokumentation.pdf': 'a7b638e4e2cf0aa0cb945db4481da807',
     //      'testdata/index.html': 'a6febb912da51bcbcc443fc658c76c3d',
