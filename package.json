@@ -1,0 +1,35 @@
+{
+  "name": "fasthash",
+  "description": "Calculate hashes for files and directories the streaming way",
+  "version": "0.1.0",
+  "main": "./lib/fasthash.js",
+  "license": "MIT",
+  "author": {
+    "name": "Anton Hammerschmidt"
+  },
+  "homepage": "https://github.com/toni89/fasthash",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toni89/fasthash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toni89/fasthash/issues"
+  },
+  "dependencies": {
+    "walk": "^2.3.9"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "hash",
+    "md5",
+    "sha1",
+    "checksum",
+    "shasum",
+    "stream",
+    "recursive",
+    "dirsum",
+    "filesum"
+  ]
+}
